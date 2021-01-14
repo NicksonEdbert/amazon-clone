@@ -18,8 +18,9 @@ function Checkout() {
         <div>
           <h3>Hello, {user?.email}</h3>
           <h2 className="checkout-title">Your shopping Basket</h2>
-          <FlipMove>
-            {basket.map((item) => (
+          {/* <FlipMove> */}
+          {basket.map((item) => (
+            // <FlipMove>
               <CheckoutProduct
                 key={item.id}
                 id={item.id}
@@ -28,8 +29,9 @@ function Checkout() {
                 price={item.price}
                 rating={item.rating}
               />
-            ))}
-          </FlipMove>
+            // {/* </FlipMove> */}
+          ))}
+          {/* </FlipMove> */}
         </div>
       </div>
       <div className="checkout-right">
